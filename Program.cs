@@ -30,9 +30,10 @@ string[] Final(string[] arr, int size)
 {
     string [] fin = new string [size];
     int i = 0;
+    int limit = 4;
     for (int j = 0; j < arr.Length; j++)
     {
-        if (arr[j].Length < 4)
+        if (arr[j].Length < limit)
             {
                 fin[i] = arr[j];
                 i++;
